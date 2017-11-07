@@ -1,8 +1,4 @@
 
-UBitName = 'artigupt';
-
-personNumber = '50170010';
-
 X = xlsread('university_data.xlsx');
 
 a = xlsread('university_data.xlsx', 'C2:C50');
@@ -66,5 +62,3 @@ BNgraph = [ 0 1 1 0; 0 0 1 1; 0 0 0 1; 0 0 0 0];
 
 BNlogLikelihood = -49.8695;
 
-save('proj1.mat', 'UBitName', 'personNumber', 'mu1', 'mu2', 'mu3', 'mu4', 'var1', 'var2', 'var3', 'var4', 'sigma1', 'sigma2', 'sigma3', 'sigma4', 'covarianceMat', 'correlationMat', 'logLikelihood', 'BNgraph','BNlogLikelihood');
- 
